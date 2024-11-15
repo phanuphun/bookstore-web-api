@@ -1,6 +1,7 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
+
 namespace SampleWebAPI.Models
 {
     public class Account
@@ -32,4 +33,12 @@ namespace SampleWebAPI.Models
         public string? Status { get; set; } = "Customer";
     }
 
+    public class Login(){
+        [Required]
+        public string Username {get; set;}
+        [Required]
+        public string Password {get; set;} 
+    }
+
+     
 }
